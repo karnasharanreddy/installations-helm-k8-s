@@ -144,11 +144,12 @@ This guide outlines the steps needed to set up a Kubernetes cluster using `kubea
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
 
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.5/deploy/static/provider/aws/deploy.yaml   {on aws ec2}
 
-     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
+     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml  {bare metal installation}
     ```
 
-4. **Generate Join Command**:
+3. **Generate Join Command**:
     ```bash
     kubeadm token create --print-join-command
     ```
