@@ -127,7 +127,10 @@ This guide outlines the steps needed to set up a Kubernetes cluster using `kubea
 
 1. **Initialize the Cluster**:
     ```bash
-    sudo kubeadm init
+    sudo kubeadm init #################{ or }
+                                                 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+
+
     ```
 
 2. **Set Up Local kubeconfig**:
