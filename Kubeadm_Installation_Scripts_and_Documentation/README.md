@@ -143,6 +143,9 @@ This guide outlines the steps needed to set up a Kubernetes cluster using `kubea
 3. **Install a Network Plugin (Calico)**:
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
+
+
+     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
     ```
 
 4. **Generate Join Command**:
